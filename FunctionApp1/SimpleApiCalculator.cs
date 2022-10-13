@@ -37,7 +37,6 @@ namespace FunctionApp1
         {
             request = req;
             requestBody = request.GetRequestBodyAsString();
-            //Extension using two type parameters to keep code as reusable as possible
             requestIsValid = requestBody.RequestBodyIsValid<Equation, EquationValidator>();
         }
         private static IActionResult CalculateAndGiveAppropriateResult()
