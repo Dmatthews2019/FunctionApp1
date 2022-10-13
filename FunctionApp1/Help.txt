@@ -1,0 +1,22 @@
+﻿Hello, it looks like you have used the ?help flag in your URL
+
+Hopefully the below can help you out.
+
+To succesfully request data from this API
+you will need to POST a JSON object with a body similar to the below.
+
+{
+    "A":4,
+    "B":5,
+    "Operation":"multiple"
+}
+
+NB:
+All Keys are case sensitive
+
+A and B must contain number values after there colon (:)
+
+Operation must be a string value matching one of the below.
+["add", "subtract", "multiply", "divide", "mod"]
+
+an operation value is not case sensitive.
